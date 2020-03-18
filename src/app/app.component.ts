@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'test-ang';
+  public images = [
+    {
+      src: './assets/images/kitten.jpg',
+    },
+    {
+      src: './assets/images/kitten2.jpg',
+    },
+    {
+      src: './assets/images/kitten3.jpg',
+    },
+    {
+      src: './assets/images/kitten4.jpg',
+    },
+    {
+      src: './assets/images/kitten5.jpg',
+    }
+  ];
 }

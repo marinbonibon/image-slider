@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="slide-container" [style.left.px]="imgContainerLeftPos">
+    <div class="slide"
+         *ngFor="let slide of slides, let i = index"
+         [class.active]="currIndex === i"
+          #images>
+      <img [src]="slide.src" alt="kitten">
+    </div>
+  </div>
+  <div>
+    <button class="btn left" (click)="focusPrevSlide()" *ngIf="currIndex > 0 ">&lt;</button>
+    <button class="btn right" (click)="focusNextSlide()" *ngIf="currIndex < slides.length - 1">&gt;</button>
+  </div>
+</div>
+
+
